@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm App</title>
+    <link rel="stylesheet" href="alarm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/solid.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="head"><h1>Alarm</h1></div>
+    
+    <div class="active-alarms">
+        <h2>Active Alarms <i class="fas fa-clock"></i></h2> 
+        <div id="alarms-list" class="alarms-list">
+          
+        </div>
+    </div>
+
+    <div class="alarm-container">
+        <div class="alarm-main">
+            <input type="time" id="alarm-time">
+        </div>
+        <button id="set-alarm-btn" class="set">Set</button>
+        <!-- <button id="clear-alarm-btn">Clear Alarm</button> -->
+    </div>
+    
+
+    <audio id="alarm-audio" src="song.mp3" preload="auto"></audio>
+    <script src="alarm.js"></script>
+</body>
+</html>
